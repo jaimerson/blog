@@ -1,0 +1,52 @@
+@import 'colors';
+
+.content{
+  padding: 20px;
+}
+
+.header{
+  background-image: image-url('jaimerson.jpg');
+  background-size: cover;
+  background-position-y: 1550px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__links{
+  list-style-type: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  background-color: $header-color;
+}
+
+.header__links__link{
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+
+.header__links__link > a{
+  text-decoration: none;
+  color: $header-font-color;
+  display: block;
+
+  &:hover{
+    color: lighten($header-font-color, 20%);
+    background-color: lighten($header-color, 3%);
+  }
+}
+
+.content{
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px -7px rgba(0,0,0,0.75);
+}
+
+pre{
+  background-color: $snippet-background-color;
+  padding: 1em;
+  max-width: 50%;
+  overflow: auto;
+}

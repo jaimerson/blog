@@ -10,6 +10,7 @@ gem 'high_voltage'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'metamagic'
+gem 'normalize-rails'
 gem 'unicorn'
 
 group :production do

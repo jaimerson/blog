@@ -3,11 +3,13 @@
 <head>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
   <%= csrf_meta_tags %>
   <%= metamagic site: 'Jaimerson Araújo',
     title: [:title, :site],
     description: 'Software development tips, tutorials and experience sharing.',
-    keywords: [:keywords, 'software', 'development', 'code', 'programming', 'engineering', 'writing'],
+    keywords: [:keywords, 'software', 'development', 'code', 'programming', 'engineering', 'writing',
+                'desenvolvimento', 'programação', 'código'],
     og: {
       site_name: :site,
       image: image_url('jaimerson.jpg'),
@@ -16,11 +18,19 @@
   %>
 </head>
 <body>
-<header>
-
-</header>
-
-<%= yield %>
-
+  <header class="header">
+    <nav>
+      <ul class="header__links">
+        <% %w(home about).each do |page| %>
+          <li class="header__links__link">
+            <%= link_to page.titleize, page_path(page) %>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+  </header>
+  <article class="content">
+    <%= yield %>
+  </article>
 </body>
 </html>
