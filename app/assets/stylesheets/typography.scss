@@ -1,7 +1,18 @@
+@import 'colors';
 @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro|Oswald:700|Open+Sans);
 
 .title{
   font-family: 'Oswald', sans-serif;
+
+  &.author{
+    text-align: center;
+    font-size: 65px;
+  }
+}
+
+.author-description{
+  color: $dark-grey;
+  text-align: center;
 }
 
 body{

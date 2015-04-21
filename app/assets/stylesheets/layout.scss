@@ -40,14 +40,24 @@
 }
 
 .content{
-  width: 90%;
+  width: 70%;
+  font-size: 22px;
+  word-wrap: break-word;
   margin: 0 auto;
+  line-height: 1.5em;
   box-shadow: 0 0 15px -7px rgba(0,0,0,0.75);
 }
 
 pre{
   background-color: $snippet-background-color;
   padding: 1em;
-  max-width: 50%;
+  max-width: 70%;
+  margin: 0 auto;
   overflow: auto;
+}
+
+.author__info{
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+  border-bottom: 1px solid $light-grey;
 }

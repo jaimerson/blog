@@ -1,0 +1,26 @@
+.social-icons{
+  text-align: center;
+}
+
+.social-icon{
+  background-image: image_url('sociocons.png');
+  width: 115px;
+  height: 115px;
+  display: inline-block;
+
+  &.twitter{
+    background-position: -120px 0;
+  }
+
+  &.github{
+    background-position: 123px -120px;
+  }
+
+  &.facebook{
+    background-position: 0 0;
+  }
+
+  &.linkedin{
+    background-position: -123px -120px;
+  }
+}
