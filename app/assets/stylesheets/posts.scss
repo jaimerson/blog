@@ -6,6 +6,7 @@
   width: 100%;
   position: relative;
   background-image: image_url('random_city.jpg');
+  margin-top: 3em;
 }
 
 .post__header__title{
@@ -16,8 +17,6 @@
 }
 
 .post__content{
-  margin-bottom: 5em;
-
   a{
     text-decoration: none;
     color: black;
@@ -26,6 +25,12 @@
     background-size: 2px 2px;
     background-position: 0 26px;
   }
+}
+
+.post__footer{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $light-grey;
 }
 
 .keep-reading{

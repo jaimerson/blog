@@ -21,13 +21,13 @@
   <header class="header">
     <nav>
       <ul class="header__links">
-        <% %w(home about).each do |page| %>
-          <li class="header__links__link">
-            <%= link_to page.titleize, page_path(page) %>
-          </li>
-        <% end %>
+        <li class="header__links__link">
+          <%= link_to 'Home', root_path %>
+        </li>
       </ul>
     </nav>
+    <div class="header__image">
+    </div>
   </header>
   <article class="content">
     <%= yield %>

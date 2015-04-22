@@ -4,17 +4,8 @@
   padding: 20px;
 }
 
-.header{
+.header__image{
   background-image: image-url('jaimerson_eyes.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
-  max-height: 25em;
-  height: 100em;
-  position: relative;
-}
-
-.footer{
-  background-image: image-url('jaimerson_nose.jpg');
   background-size: cover;
   background-position: 50% 50%;
   max-height: 25em;
@@ -25,8 +16,7 @@
 .header__links{
   list-style-type: none;
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  height: 40px;
   margin: 0;
   padding: 0;
   background-color: $header-color;
@@ -54,7 +44,15 @@
   word-wrap: break-word;
   margin: 0 auto;
   line-height: 1.5em;
-  box-shadow: 0 0 15px -7px rgba(0,0,0,0.75);
+}
+
+.footer{
+  background-image: image-url('jaimerson_nose.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  max-height: 25em;
+  height: 100em;
+  position: relative;
 }
 
 pre{
