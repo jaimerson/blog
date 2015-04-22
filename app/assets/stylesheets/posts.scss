@@ -17,6 +17,15 @@
 
 .post__content{
   margin-bottom: 5em;
+
+  a{
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 26px;
+  }
 }
 
 .keep-reading{
