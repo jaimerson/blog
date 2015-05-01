@@ -1,0 +1,70 @@
+@import 'colors';
+
+.content{
+  padding: 20px;
+}
+
+.header__image{
+  background-image: image-url('jaimerson_eyes.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  max-height: 25em;
+  height: 100em;
+  position: relative;
+}
+
+.header__links{
+  list-style-type: none;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: $header-color;
+}
+
+.header__links__link{
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+
+.header__links__link > a{
+  text-decoration: none;
+  color: $header-font-color;
+  display: block;
+
+  &:hover{
+    color: lighten($header-font-color, 20%);
+    background-color: lighten($header-color, 3%);
+  }
+}
+
+.content{
+  width: 70%;
+  font-size: 22px;
+  word-wrap: break-word;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+.footer{
+  background-image: image-url('jaimerson_nose.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  max-height: 25em;
+  height: 100em;
+  position: relative;
+}
+
+pre{
+  background-color: $snippet-background-color;
+  padding: 1em;
+  max-width: 70%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.author__info{
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+  border-bottom: 1px solid $light-grey;
+}

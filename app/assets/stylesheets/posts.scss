@@ -1,0 +1,59 @@
+@import "colors";
+
+.post__header{
+  max-height: 20em;
+  height: 100em;
+  width: 100%;
+  position: relative;
+  background-image: image_url('random_city.jpg');
+  margin-top: 3em;
+}
+
+.post__header__title{
+  position: absolute;
+  top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.post__content{
+  a{
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 26px;
+  }
+}
+
+.post__footer{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $light-grey;
+}
+
+.keep-reading{
+  color: $links-color;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.keep-reading__text{
+  height: 50px;
+  box-shadow: 0 0 15px -7px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.4s ease-in-out;
+
+  &:after{
+    content: '>';
+  }
+
+  &:hover{
+    background-color: $links-color;
+    color: white;
+  }
+}

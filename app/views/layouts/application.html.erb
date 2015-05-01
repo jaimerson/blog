@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
   <%= csrf_meta_tags %>
+  <%= metamagic site: 'Jaimerson Araújo',
+    title: [:title, :site],
+    description: 'Software development tips, tutorials and experience sharing.',
+    keywords: [:keywords, 'software', 'development', 'code', 'programming', 'engineering', 'writing',
+                'desenvolvimento', 'programação', 'código'],
+    og: {
+      site_name: :site,
+      image: image_url('jaimerson.jpg'),
+      url: request.original_url
+    }
+  %>
 </head>
 <body>
-
-<%= yield %>
-
+  <header class="header">
+    <nav>
+      <ul class="header__links">
+        <li class="header__links__link">
+          <%= link_to 'Home', root_path %>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__image">
+    </div>
+  </header>
+  <article class="content">
+    <%= yield %>
+  </article>
+  <footer class="footer"></footer>
 </body>
 </html>
